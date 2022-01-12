@@ -1,0 +1,37 @@
+#footer {
+    background-color: rgb(249, 247, 248);
+    height: 16vmax;
+    justify-content: space-evenly;
+    display: flex;
+    align-items: baseline;
+}
+#footer .footer__link {
+	display: flex;
+    flex-direction: column;
+    align-items: center
+}
+#footer .footer__contacto h5 {
+	margin: 20px;
+    text-align: center;
+}
+#footer .footer__contacto a:nth-child(1) {
+	background-image: url(../Img/Web-logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 20px;
+    margin: 10px;
+}
+#footer .footer__contacto a:nth-child(2) {
+	background-image: url(../Img/whatsapp-logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 20px;
+    margin: 10px;
+}
+#footer .footer__contacto a:nth-child(3) {
+	background-image: url(../Img/Discord.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 20px;
+    margin: 10px;
+}

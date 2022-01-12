@@ -1,4 +1,4 @@
-@media screen and (max-width: 768px){
+@media screen and (min-width: 768px){
     #header {
         height: 150px;
         display: grid;
@@ -42,8 +42,9 @@
         flex-direction: column;
         align-items: center;
         background-image: none;
-        height: 50vmax;
+        height: 15vmax;
     }
+
     #footer a{
         text-decoration: none;
         font-family: sans-serif;
