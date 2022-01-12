@@ -1,75 +1,70 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TuCV|Next-IT</title>
-    <link rel="shortcut icon" href="./Img/Fav.jpg">
-    <link rel="shortcut icon" href="./Img/Fav.jpg">
-    <link rel="stylesheet" href="../Css/Style.css">
-    <link rel="stylesheet" href="../Css/MediaQ.css">
-    <link rel="stylesheet" href="../Css/Login.css">
-</head>
-<body><!-- Comienzo del encabezado -->
-    <header id="header">
-        <div class="header__logo">
-            <a href="../index.html"><img src="../Img/Logo.jpg" alt="Next-IT"></a>
-        </div>
-        <nav class="header__menu"><!-- Menú fijo -->
-            <ul>
-                <li><a href="../Page/tucv.html">TuCV</a></li>
-                <li><a href="../Page/estadisticas.html">Estadisticas</a></li>
-                <li><a href="../Page/cursos.html">Cursos</a>
-                    <ul><!-- Menu :hover -->
-                        <li><a href="../Page/recomendados.html">Recomendados</a></li>
-                        <li><a href="../Page/gratis.html">Gratis</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-    </header><!-- Fin del encabezado -->    
-    <!-- Login para acceder al contenido -->
-    <Div id="Log"> 
-        <form action="./tucv.html" class="form-box animated fadeInUp">
-            <h1 class="form-title">SignIn</h1>
-            <input type="text" placeholder="Username" autofocus>
-            <input type="password" placeholder="Password">
-            <button type="submit">
-            Login
-            </button>
-        </form>
-    </Div>
-    <dic class="futuro"></dic><!-- Contenido a pensar -->
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.88.1">
+    <title>Signin Template · Bootstrap v5.1</title>
 
-    <footer id="footer"><!-- Comienzo del pie de página -->
-        <section class="footer__team">
-            <h5>Equipo</h5>
-            <div class="footer__social">
-                <div class="persona0">
-                    <img src="../Img/Persona1.jfif" alt="Selfy" width="50" height="auto">
-                <a href="https://www.linkedin.com/in/estefania-focaraccio-70a73333/" target="_blank"> Linkedin</a>
-                </div>
-                <div class="persona1">
-                    <img src="../Img/Persona2.jfif" alt="Selfy" width="50" height="auto">
-                <a href="https://www.linkedin.com/in/daniela-arrascaeta/" target="_blank"> Linkedin</a>
-                </div>
-            </div>
-        </section>
-        <section class="footer__link">
-            <h5>Link de Interes</h5>            
-            <a href="https://news.mit.edu/" target="_blank">MIT news</a>
-            <a href="https://www.nasdaq.com/" target="_blank">nasdaq</a>
-            <a href="https://accounts.binance.com/es/register?ref=OXA24GVI" target="_blank">Binance</a> 
-            <a href="https://bitfinex.com/?refcode=mAr2cZqyQ" target="_blank">Bitfinex</a>
-            <a href="https://www.kucoin.com/ucenter/signup?rcode=r394MPM" target="_blank">Kucoin</a>
-        </section>
-        <section class="footer__contacto">
-            <h5>Coctactenos<h5>
-                <a href="../Page/contactenos.html"></a>
-                <a href="https://api.whatsapp.com/send?phone=5491134408993"></a>
-                <a href="#"></a>
-        </section>
-    </footer><!-- Fin de pie -->
-</body>
+  
+   
+    
+
+    <!-- Bootstrap core CSS -->
+<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="../Css/signin.css" rel="stylesheet">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  </head>
+  <body class="text-center">
+    
+<main class="form-signin">
+  <form>
+    <img class="mb-4" src="../Img/Logo.jpg" alt="">
+    <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+
+    <div class="form-floating">
+      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+      <label for="floatingInput">Email address</label>
+    </div>
+    <div class="form-floating">
+      <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+      <label for="floatingPassword">Password</label>
+    </div>
+
+    <div class="checkbox mb-3">
+      <label>
+        <input type="checkbox" value="remember-me"> Remember me
+      </label>
+    </div>
+    <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
+    <p class="mt-5 mb-3 text-muted">&copy; 2021–2026</p>
+  </form>
+</main>
+
+
+    
+  </body>
 </html>
