@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
     box-sizing: 0;
 }
 #header {
@@ -60,7 +59,7 @@
 	text-decoration: none;
 }
 /* botones del body */
-p {
+/* p {
 	border:2px solid #303F3C;
 	border-radius: 15px;
 	text-align: center;
@@ -71,7 +70,7 @@ p {
 	width: 22vmax;
 	padding: 10px;
 	margin-bottom: 10px;
-}
+} */
 #menuBody {
 	display: flex;
     height: 100vh;
