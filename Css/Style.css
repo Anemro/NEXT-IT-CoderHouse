@@ -1,10 +1,9 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
     box-sizing: 0;
 }
-#header {
+.header {
 	background-color: #F9F7F8;
 	padding: 10px;
 	height: 60px;
@@ -56,11 +55,11 @@
 	font-size: 1rem;
 	text-align: left;
 }
-#menuBody a{
+/* #menuBody a{
 	text-decoration: none;
-}
+} */
 /* botones del body */
-p {
+/* p {
 	border:2px solid #303F3C;
 	border-radius: 15px;
 	text-align: center;
@@ -71,8 +70,8 @@ p {
 	width: 22vmax;
 	padding: 10px;
 	margin-bottom: 10px;
-}
-#menuBody {
+} */
+/* #menuBody {
 	display: flex;
     height: 100vh;
     background-image: url(../Img/pexels-tranmautritam-251225.jpg);
@@ -82,8 +81,8 @@ p {
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-}
-#menuBody .Image__fondo{
+} */
+/* #menuBody .Image__fondo{
 	position: relative;
 }
 #menuBody .Solution p:hover {
@@ -93,7 +92,7 @@ p {
 #menuBody .Found p:hover {
 	background-color: #303F3C;
 	color: #F9F7F8;
-}
+} */
 /* Comienza Pie de página */
 #footer {
     background-color: rgb(249, 247, 248);
