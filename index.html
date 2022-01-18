@@ -9,53 +9,77 @@
     <link rel="stylesheet" href="./Css/Style.css">
     <link rel="stylesheet" href="./Css/MediaQ.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Link a Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- Link CSS personalizar Bootstrap -->
+    <link rel="stylesheet" href="./Css/StyBoot.css">
 <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
     <!-- Comienzo del encabezado -->
-    <header id="header">
-        <div class="header__logo">
-            <img src="./Img/Logo.jpg" alt="Next-IT">
-        </div>
-        <nav class="header__menu"><!-- Menú fijo -->
-            <ul>
-                <li><a href="./Page/tucv.html">TuCV</a></li> <!-- va a la pag CV -->
-                <li><a href="./Page/estadisticas.html">Estadisticas</a></li><!-- va a la pag Estadisticas -->
-                <li><a href="./Page/cursos.html">Cursos</a><!-- despliega menu Cursos -->
-                    <ul><!-- Menu :hover -->
-                        <li><a href="./Page/recomendados.html">Recomendados</a></li><!-- va a pag Recomendados -->
-                        <li><a href="./Page/gratis.html">Gratis</a></li><!-- Va a pag Gratis -->
+    <header class="header">         
+      
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+              <a class="navbar-brand" href="#">Next-IT</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./Page/tucv.html">TuCV</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./Page/estadisticas.html">Estadisticas</a>
+                  </li>                  
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Cursos
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item" href="./Page/gratis.html">Gratis</a></li>
+                      <li><a class="dropdown-item" href="./Page/recomendados.html">Recomendados</a></li>                     
                     </ul>
-                </li>
-            </ul>
-        </nav>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+      
     </header><!-- Fin del encabezado -->    
 <main id="menuBody"><!-- cuerpo de la pag -->
-    <div class="Solution">
-        <a href="./Page/Solution.html" target="_self"><p>Find Talent</p></a>
-    </div>
-    <div class="Found">
-        <a href="./Page/Found.html" target="_self"><p>Find Work</p></a>
-    </div><!-- fin del cuerpo -->   
+  <div class="d-grid gap-2 p-3 col-6 mx-auto">
+    <a href="./Page/Solution.html" class="btn btn-primary">Find Talent</a>
+    <a href="./Page/Found.html" class="btn btn-primary">Find Work</a>
+  </div>
 </main>
+<Section class="container">
+  <div class="row justify-content-md-center">
+    <div class="card col-sm-6" style="width: 18rem;">
+      <img src="./Img/Persona1.jfif" class="card-img-top" alt="redes">
+      <div class="card-body">
+        <h5 class="card-title">Estefanía Focaraccio</h5>
+        <p class="card-text">I am a counselor, passionate about enhancing people's skills, contributing to their development and helping them find their dream job.</p>
+        <a href="https://www.linkedin.com/in/estefania-focaraccio-70a73333/" class="btn btn-primary">Go LinkedIN</a>
+      </div>
+    </div>
+    <div class="card col-sm-6" style="width: 18rem;">
+      <img src="./Img/Persona2.jfif" class="card-img-top" alt="redes">
+      <div class="card-body">
+        <h5 class="card-title">Daniela Arrascaeta</h5>
+        <p class="card-text">I am a Recruiting & Talent Acquisition Professional, passionate about working with people, contributing to their development and helping companies find the best talent.</p>
+        <a href="https://www.linkedin.com/in/daniela-arrascaeta/" class="btn btn-primary">Go LinkedIN</a>
+      </div>
+    </div>
+  </div>
+</Section><!-- fin del cuerpo --> 
 
 <footer id="footer"><!-- Comienzo del pie de página -->
-    <section class="footer__team">
-        <h5>Equipo</h5>
-        <div class="footer__social">
-            <div class="persona0">
-                <img src="./Img/Persona1.jfif" alt="Selfy" >
-            <a href="https://www.linkedin.com/in/estefania-focaraccio-70a73333/" target="_blank"> Linkedin</a>
-            </div>
-            <div class="persona1">
-                <img src="./Img/Persona2.jfif" alt="Selfy">
-            <a href="https://www.linkedin.com/in/daniela-arrascaeta/" target="_blank"> Linkedin</a>
-            </div>
-        </div>
-    </section>
+   
     <section class="footer__link">
         <h5>Link de Interes</h5>            
         <a href="https://news.mit.edu/" target="_blank">MIT news</a>
@@ -71,6 +95,8 @@
             <a href="Anenro#4282"></a>
     </section>
 </footer><!-- Fin de pie -->
+<!-- JavaScrip para Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
                
