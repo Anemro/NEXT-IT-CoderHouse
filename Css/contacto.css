@@ -1,0 +1,136 @@
+header nav div a img {
+  width: 200px;
+}
+
+#formulario {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#formulario fieldset {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+#footer {
+  background-color: #f9f7f8;
+  height: 16vmax;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+#footer a {
+  text-decoration: none;
+  font-family: sans-serif;
+  color: black;
+}
+
+#footer a:hover {
+  color: #303F3C;
+}
+
+#footer h5 {
+  margin-bottom: 10px;
+}
+
+#footer .footer__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#footer .footer__social .persona0 img, #footer .footer__social .persona1 img {
+  max-width: 40%;
+  height: auto;
+}
+
+#footer .footer__team {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#footer .footer__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#footer .footer__contacto h5 {
+  margin: 20px;
+  text-align: center;
+}
+
+#footer .footer__contacto a:nth-child(1) {
+  background-image: url(../Img/Web-logo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 20px;
+  margin: 10px;
+}
+
+#footer .footer__contacto a:nth-child(2) {
+  background-image: url(../Img/whatsapp-logo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 20px;
+  margin: 10px;
+}
+
+#footer .footer__contacto a:nth-child(3) {
+  background-image: url(../Img/Discord.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 20px;
+  margin: 10px;
+}
+/*# sourceMappingURL=contacto.css.map */

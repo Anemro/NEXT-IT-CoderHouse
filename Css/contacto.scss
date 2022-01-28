@@ -1,0 +1,95 @@
+
+
+header{
+    nav{
+        div{
+            a{
+                img{
+                    width: 200px;
+                }
+            }
+        }
+    }
+}
+#formulario {
+	display: flex;
+    max-width: 100%;
+    flex-direction: column;
+    align-items: center;
+    fieldset {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        align-items: baseline;
+    }
+}
+
+#footer {
+    background-color: rgb(249, 247, 248);
+    height: 16vmax;
+    justify-content: space-evenly;
+    display: flex;
+    align-items: baseline;
+    a{
+    text-decoration: none;
+	font-family: sans-serif;
+	color: black;
+    }
+    a:hover{
+        color: #303F3C;
+    }
+    h5 {
+        margin-bottom: 10px;
+    }
+    .footer__social{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .persona0 img, .persona1 img{
+            max-width: 40%;
+	        height: auto;
+
+        }
+
+    }
+    .footer__team{
+        display: flex;
+        flex-direction: column;
+        align-items: center        
+    }
+    .footer__link{
+        display: flex;
+        flex-direction: column;
+        align-items: center
+    }
+    .footer__contacto{
+        h5{
+            margin: 20px;
+             text-align: center;
+        }
+        a:nth-child(1) {
+            background-image: url(../Img/Web-logo.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            padding: 20px;
+            margin: 10px;
+        }
+        a:nth-child(2) {
+            background-image: url(../Img/whatsapp-logo.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            padding: 20px;
+            margin: 10px;
+        }
+        a:nth-child(3) {
+            background-image: url(../Img/Discord.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            padding: 20px;
+            margin: 10px;
+        }
+    }
+
+
+}
