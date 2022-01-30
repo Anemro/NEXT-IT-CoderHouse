@@ -56,12 +56,16 @@
             <label for="comentario"COMENTARIOS></label>
             <textarea name="comentario" id="comentario" cols="50" rows="7" placeholder="Su consulta"></textarea>    
             <h6>Persona</h6>
-            <label for="",Juridica>Coorporativa</label>
-            <input type="radio" name="TIPO" value="Juridica">
-            <label for=""Humana">Particular</label>
-            <input type="radio" name="TIPO" value="Humana">
-            <input type="submit" value="Enviar Ahora">
-            <input type="reset" value="Borrar todo">
+            <div class="contedor__tipos">
+              <label for="",Juridica>Coorporativa</label>
+              <input type="radio" name="TIPO" value="Juridica">
+              <label for=""Humana">Particular</label>
+              <input type="radio" name="TIPO" value="Humana">
+            </div>
+            <div class="contenedor__boton">
+              <input class="boton" type="submit" value="Enviar Ahora">
+              <input class="boton" type="reset" value="Borrar todo">
+            </div>
             </fieldset>
         </form>
     </div>

@@ -8,9 +8,7 @@
   grid-column-gap: 5px;
   grid-row-gap: 5px;
   height: 90vh;
-      grid-template-areas: "A2 A1 A1"
- "A3 A1 A1"
- "A4 B1 B2";
+      grid-template-areas: "A2 A1 A1" "A3 A1 A1" "A4 B1 B2";
 }
 
 .java, .phyton, .NET, .nodeJS, .js, .aws, .Other {
