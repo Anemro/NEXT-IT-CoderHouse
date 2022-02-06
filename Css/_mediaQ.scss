@@ -1,4 +1,4 @@
-@media screen and (min-width: 768px){
+@media screen and (max-width: 768px){
     #header {
         height: 150px;
         display: grid;
@@ -10,8 +10,10 @@
     }
     body {
         display: grid;
-        background-color:#032CA6;  
-        background-image: url(../Img/fondomobile.jpg);  
+        background-color:#032CA6;
+        /* --tw-bg-opacity: 1;
+        background-color: rgba(249,249,251,var(--tw-bg-opacity)); */  
+        /* background-image: url(../Img/fondomobile.jpg);  */ 
         background-size: cover;
         background-repeat: no-repeat;
     }
