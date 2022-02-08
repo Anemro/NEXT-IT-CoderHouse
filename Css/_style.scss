@@ -6,13 +6,14 @@
 $width: 100%;
 $colorHover: #303F3C;
 $colorFuente: #000000;
-$colorFondo: linear-gradient(325deg,rgb(231, 213, 242) 0%, rgb(175, 169, 217) 52%,rgb(117, 115, 191) 100%);
+$gradiente1: linear-gradient(325deg,rgb(231, 213, 242) 0%, rgb(175, 169, 217) 52%,rgb(117, 115, 191) 100%);
+$gradiente2: linear-gradient(180deg, rgba(117,115, 191, 0.7) 0%, rgba(0, 0, 0, 0) 100%);
 $colorLogo1:#7573BF;
 $colorLogo2:#E7D5F2;
 $colorLogo3:#AFA9D9;
 $font:'Cabin', sans-serif;
 $fontBoton:#ffff;
-$fontSize: 1.25rem;
+$fontSize: 1.5rem;
 
 %childContacto {
     background-size: contain;
@@ -47,20 +48,58 @@ $fontSize: 1.25rem;
     padding: 1.25rem 1rem 2.5rem;
     font-size: $font__size;
 }
+.deseo {
+    align-items: center;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    img{
+        max-width: 100vw;
+        max-height: 50vh;
+    }
+    .img__entrada{
+        position: relative;
+        display: inline-block;
+        text-align: center;
+        .texto__entrada{
+            position: absolute;
+            top: 0%;
+            right: 0%;
+            left: 0%;
+            background: $gradiente2;
+            h2 {
+                font-size: 38px;/* mediaQ 42px */
+                font-family: $font;
+                span {
+                    color: green;
+                }
+            }
+
+        }
+    }
+}
 
 .boton{
 	@include botones(200px,45px,$colorLogo1)
 }
-.nosotros{
-    @include back__texto($colorFondo, $fontBoton,$fontSize)
+.centro{
+    .nosotros{
+        @include back__texto($gradiente1, $fontBoton,$fontSize)
+    }
 }
-img {
-    width: 7.5rem;
+.centro__oculto{
+    display: none;
+}
+.header__logo {
+    width: 13.5rem;
 }
 .footer{
     @extend %displayFooter;
     .footer__logo{
         padding: 1rem;
+        img {
+            width: 10rem;
+        }
     }
     .footer__contacto{
         @extend %displayFooter
