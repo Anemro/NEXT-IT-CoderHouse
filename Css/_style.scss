@@ -13,7 +13,7 @@ $colorLogo2:#E7D5F2;
 $colorLogo3:#AFA9D9;
 $font:'Cabin', sans-serif;
 $fontBoton:#ffff;
-$fontSize: 1.5rem;
+$fontSize: 1.3rem;
 
 %childContacto {
     background-size: contain;
@@ -45,7 +45,7 @@ $fontSize: 1.5rem;
 @mixin back__texto ($color__fondo, $color__fuente,$font__size) {
     background: $color__fondo;
     color: $color__fuente;    
-    padding: 1.25rem 1rem 2.5rem;
+    padding: 3.75rem 6.75rem 5rem;
     font-size: $font__size;
 }
 .deseo {
@@ -61,6 +61,7 @@ $fontSize: 1.5rem;
         position: relative;
         display: inline-block;
         text-align: center;
+        width: 100%;
         .texto__entrada{
             position: absolute;
             top: 0%;
@@ -68,7 +69,7 @@ $fontSize: 1.5rem;
             left: 0%;
             background: $gradiente2;
             h2 {
-                font-size: 38px;/* mediaQ 42px */
+                font-size: 30px;
                 font-family: $font;
                 span {
                     color: green;
@@ -84,14 +85,20 @@ $fontSize: 1.5rem;
 }
 .centro{
     .nosotros{
-        @include back__texto($gradiente1, $fontBoton,$fontSize)
+        @include back__texto($gradiente1, $fontBoton, $fontSize);
+        max-height: 260px;
     }
 }
 .centro__oculto{
     display: none;
 }
 .header__logo {
-    width: 13.5rem;
+    width: 100px;
+}
+.cards__responsive{
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
 }
 .footer{
     @extend %displayFooter;

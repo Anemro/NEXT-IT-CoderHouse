@@ -1,70 +1,59 @@
-@media screen and (max-width: 768px){
-    #header {
-        height: 150px;
-        display: grid;
-        justify-content: space-around;
+@media screen and (min-width: 768px){
+
+    .us{
+        display: block; 
+        max-height: 260px;
     }
-    #header .header__logo img {
-        width: 25vmax;
-        height: auto;
-    }
-    body {
-        display: grid;
-        background-color:#032CA6;
-        /* --tw-bg-opacity: 1;
-        background-color: rgba(249,249,251,var(--tw-bg-opacity)); */  
-        /* background-image: url(../Img/fondomobile.jpg);  */ 
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-    .header__logo{
+    .centro {
         display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+    }
+    .centro__oculto{
+        display: flex;
+        flex-flow: column wrap;
         justify-content: center;
-    }
-    .header__logo img {
-        max-width: 300px;
-    }
-    #footer a{
-        text-decoration: none;
-        font-family: sans-serif;
-        color: black;
-    }
-    #footer .footer__team {
-        display: flex;
-        flex-direction: column;
         align-items: center;
-        width: 100%;
+        background: #ffff;
+        max-width: 30%;
     }
-    #footer .footer__team .footer__social {
+    
+    .nosotros{
+        padding: 3.75rem 3.75rem 7rem;
+        max-width: 60%;
+    }
+    .img__style{
+        background: #CCC;
+        overflow: hidden;
+        max-height: 260px;
+      
+    }
+    .img__style img{
+        width: 100%;
+        height: auto;
+        transition: opacity 500ms ease 0s;       
+    }
+    @supports(object-fit: cover){
+        .img__style img{
+          height: 100%;
+          object-fit: cover;
+          object-position: center center;
+        }
+    .cards__responsive{
         display: flex;
         flex-direction: row;
-        align-items: center;
-        width: 50%;
-        justify-content: space-evenly;
+        gap: 5rem;
     }
-    #footer .footer__team .footer__social .persona0, .persona1 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    .sobre__mi{
+        height: 100%;
     }
-    .persona0 img, .persona1 img {
-        max-width: 40%;
-        height: auto;
+    
     }
-    /* MediaQ para page .Cusos/gratis */
-    #contenedor {
-        display: grid;
-        justify-items: center;
-    }
-    /* Anulamos el desplegable para Mobile */
-    #header .header__menu ul li:hover ul {
 
-        display: none;
-    }    
-    /* Bootstrap core CSS */
-     @media (min-width: 768px) {
-      .bd-placeholder-img-lg {
-        font-size: 3.5rem;
-      }
-    }
+
+
+
+
+
 }
+   
