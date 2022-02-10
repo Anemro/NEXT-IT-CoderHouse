@@ -10,7 +10,9 @@
     <meta name="keywords" content="java developer, java jr, jr programacion, programacion sueldo en dolares, trabajo remoto, freelance">
     <title>TuCV</title>
  <link rel="stylesheet" href="../Css/main.css">
-
+    <!-- Fonts -->
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
     <!-- Bootstrap core CSS -->
 <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- bootstrap -->
@@ -20,82 +22,74 @@
 </head>
 
 <body class="text-center">
-  <nav class="navbar navbar-expand-lg navbar-light">
-    <div class="container-fluid">
-          <a class="navbar-brand" href="../index.html">Next-IT</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="./tucv.html">TuCV</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./estadisticas.html">Estadisticas</a>
-              </li>                  
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Cursos
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <li><a class="dropdown-item" href="./gratis.html">Gratis</a></li>
-                  <li><a class="dropdown-item" href="./recomendados.html">Recomendados</a></li>                     
-                </ul>
-              </li>
-            </ul>
-          </div>
+  <header class="header">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html">
+          <img class="header__logo" src="../Img/next IT.png" alt="talent IT">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./tucv.html">TuCV</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./estadisticas.html">Estadisticas</a>
+            </li>                  
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Cursos
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="./gratis.html">Gratis</a></li>
+                <li><a class="dropdown-item" href="./recomendados.html">Recomendados</a></li>                     
+              </ul>
+            </li>
+          </ul>
         </div>
-      </nav>    
-<main class="form-signin">
-  <form>
-    
-    <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
-
-    <div class="form-floating">
-      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-      <label for="floatingInput">Email address</label>
-    </div>
-    <div class="form-floating">
-      <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-      <label for="floatingPassword">Password</label>
-    </div>
-
-    <div class="checkbox mb-3">
-      <label>
-        <input type="checkbox" value="remember-me"> Remember me
-      </label>
-    </div>
-    <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
-    <p class="mt-5 mb-3 text-muted">&copy; 2021–2026</p>
-  </form>
-</main>
-<footer id="footer"><!-- Comienzo del pie de página -->
-  <section class="footer__team">
-      <h5>Equipo</h5>
-      <div class="footer__social">
-          <div class="persona0">
-              <img src="../Img/Persona1.jfif" alt="Selfy" width="50" height="auto">
-          <a href="https://www.linkedin.com/in/estefania-focaraccio-70a73333/" target="_blank"> Linkedin</a>
-          </div>
-          <div class="persona1">
-              <img src="../Img/Persona2.jfif" alt="Selfy" width="50" height="auto">
-          <a href="https://www.linkedin.com/in/daniela-arrascaeta/" target="_blank"> Linkedin</a>
-          </div>
       </div>
-  </section>
-  
-  <section class="footer__contacto">
-      <h5>Coctacto<h5>
-          <a href="../Page/contactenos.html"></a>
-          <a href="https://api.whatsapp.com/send?phone=5491134408993"></a>
-          <a href="#"></a>
-  </section>
-</footer><!-- Fin de pie -->
+    </nav>
+  </header><!-- Fin del encabezado -->   
+   <section class="flex__cv">
+      <div class="log"> 
+        <form action="./tucv.html" class="form-box animated fadeInUp">
+            <h1 class="form-title">Sign In</h1>
+            <input type="text" placeholder="Username" autofocus>
+            <input type="password" placeholder="Password">
+            <button type="submit">
+            Login
+            </button>
+            <button type="submit">
+              Register
+            </button>
+        </form>
+      </div>    
+      <div class="cv__seleccion">
+        <img src="../Img/selection.png" alt="cv developer">
+
+      </div>
+    </section>
+
+    <footer class="footer"><!-- Comienzo del pie de página -->
+      <div class="footer__logo">
+          <img src="../Img/next IT.png" alt="talent IT">
+      </div>       
+      <div class="footer__contacto">
+        <div>
+          <h5>Contactenos<h5-->
+        </div>  
+        <div>
+          <a class="animate__animated animate__heartBeat" href="../Page/contactenos.html"></a>
+          <a href="https://api.whatsapp.com/send?phone=5491134408993"></a><!-- whatsapp -->
+          <a href=https://discord.gg/Qc9uwza7></a>
+        </div>
+      </div>
+    </footer><!-- Fin de pie -->
 <!-- JS Bootstrap -->
-<script src="../js/bootstrap.bundle.min.js"></script>
-
-
-    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="../js/bootstrap.bundle.min.js"></script>    
   </body>
 </html>
