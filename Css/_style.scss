@@ -19,7 +19,6 @@ $fontSize: 1.3rem;
     background-size: contain;
     background-repeat: no-repeat;
     padding: 1.25rem;
-    margin: 1rem;
 }
 %displayFooter {
     display: flex;
@@ -105,7 +104,7 @@ $fontSize: 1.3rem;
     .footer__logo{
         padding: 1rem;
         img {
-            width: 10rem;
+            width: 8rem;
         }
     }
     .footer__contacto{
@@ -113,7 +112,7 @@ $fontSize: 1.3rem;
     }
     div{
         h5 {
-        padding: 0.5rem;
+        padding: 1rem;
         }   
     }
 

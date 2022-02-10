@@ -1,4 +1,4 @@
-#Log {
+.flex__cv {
     background: #2f3542;
     display: flex;
     flex-direction: row;
@@ -10,9 +10,9 @@
 }
 
 .form-box {
-    width: 300px;
+    width: 480px;
     padding: 40px;
-    background: #191919;
+    background: #2F3542;
     text-align: center;
 }
 
@@ -59,4 +59,10 @@
 
 .form-box button[type="submit"]:hover {
     background: none;
+}
+@media screen and (min-width: 768px){
+    .flex__cv{
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
 }
