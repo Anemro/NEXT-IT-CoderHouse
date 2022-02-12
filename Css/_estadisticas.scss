@@ -1,0 +1,73 @@
+@mixin tablas ($back_color,$width) {
+    background-color: $back_color;
+    color: white;
+    width: $width;
+    align-items: left;    
+}
+
+.cabecera__estadistica{
+    background-image: url(../Img/estadistica2.png);
+    color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 40vh;
+    background-size: cover;
+    h1{
+        padding: 4rem;
+        text-align: center;
+        font-size: 22px;
+    }
+}
+.display__estadisticas{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+.tabla__programación{
+    background-color:#E7D5F2;
+    width: 360px;
+    margin: 5px;
+    .table__ancho{
+        width: 98%;
+    }
+}
+.titulos__barras{
+    width: 30%;
+    align-items: left;
+}
+.barras {
+    @include tablas(#c33,100%)
+}
+.barras2 {
+    @include tablas(#fdcf26,86.95%)
+}
+.barras3 {
+    @include tablas(#5c2d91,63.33%)
+}
+.barras4 {
+    @include tablas(#ccc,36.66%)
+}
+.barras5 {
+    @include tablas(#280068,33.33%)
+}
+.barras6 {
+    @include tablas(#FFD43B,30%)
+}.barras7 {
+    @include tablas(#68A063,26.66%)
+}
+.tabla__programación :nth-child(2){
+   padding: 2px;
+}
+@media screen and (min-width: 768px) {
+    .display__estadisticas{
+        flex-direction: row;    
+        justify-content: space-evenly;
+    }
+    .cabecera__estadistica{
+        h1{
+            padding: 5rem;
+            font-size: 30px;
+        }
+    }
+}
