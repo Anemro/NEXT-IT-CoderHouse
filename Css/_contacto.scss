@@ -2,7 +2,7 @@ $width: 100%;
 $ancho: 200px;
 $colorHover: #303F3C;
 $colorFuente: #000000;
-$colorFondo: rgb(249, 247, 248);
+$colorFondo: #f9f7f8;
 $colorLogo1:#7573BF;
 $colorLogo2:#E7D5F2;
 $colorLogo3:#AFA9D9;
@@ -37,20 +37,38 @@ $fontBoton:#ffff;
 	padding: 0.375rem 0.75rem;
   } 
 
-#formulario {
+.formulario {
+    font-family: $font;
     @extend %displayFooter;
     max-width: $width;
-    
-    fieldset {
-        @extend %displayFooter;      
-        flex-wrap: wrap;
-        align-content: center;
-        height: 50vh;
-        
+    background-color: $colorLogo2;
+    padding-bottom: 20px;
+    input{
+        box-shadow:  2px 5px 14px -2px rgb(0, 0, 0);
+        background-color: $colorFondo;
+        margin: 5px;
+        border-radius: 7px;
+        text-align: center;
+    }
+    legend{
+        text-align: center;
+    }
+    .input__date{
+        display: flex;
+        flex-direction: column;
+        align-content: flex-start;
+        max-width: 420px;
     }
     .contenedor__boton {
         .boton {
             @include botones(200px,40px,$colorLogo1)
         }
     }
-}
+    .coment textarea{
+        max-width: 500px;
+        width: 100%;
+    }
+    .contenedor__tipos{
+        text-align: center;
+    }
+ }

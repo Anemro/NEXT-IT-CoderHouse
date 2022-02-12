@@ -1,12 +1,17 @@
-.flex__cv {
+.flex__cv{
     background: #2f3542;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    /* No Scrollbar */
     overflow: hidden;
+    color: #fff;
+
+    img{
+        max-width: 480px;
+        width: 100%;
+    }
 }
 
 .form-box {
@@ -17,12 +22,11 @@
 }
 
 .form-title {
-    color: #fff;
     text-transform: uppercase;
     font-weight: 500;
 }
 
-.form-box input[type="text"], .form-box input[type="password"], .form-box button[type="submit"] {
+.form-box input[type="text"], .form-box input[type="password"], .form-box button[type="submit"], .form-box input[type="email"], .form-box input[type="number"],.coment textarea{
     border: 0;
     background: none;
     display: block;
@@ -30,15 +34,18 @@
     text-align: center;
     border: 2px solid #3742fa;
     padding: 14px 10px;
-    width: 200px;
+    width: 300px;
     outline: none;
     color: white;
     border-radius: 24px;
     transition: 0.25s;
 }
+.coment textarea{
+    width: 360px !important;
+}
 
-.form-box input[type="text"]:focus, .form-box input[type="password"]:focus {
-    width: 280px;
+.form-box input[type="text"]:focus, .form-box input[type="password"]:focus, .form-box input[type="email"]:focus, .form-box input[type="number"]:focus{
+    width: 350px;
     border-color: #ffffff;
 }
 
@@ -50,8 +57,7 @@
     text-align: center;
     border: 2px solid #3742fa;
     padding: 14px 40px;
-    outline: none;
-    color: white;
+    outline: none;    
     border-radius: 24px;
     transition: 0.25s;
     cursor: pointer;
@@ -63,6 +69,6 @@
 @media screen and (min-width: 768px){
     .flex__cv{
         flex-wrap: nowrap;
-        justify-content: space-between;
+        justify-content: space-evenly;
     }
 }
