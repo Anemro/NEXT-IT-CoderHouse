@@ -1,0 +1,80 @@
+@media screen and (min-width: 768px){
+
+    .us{
+        display: block; 
+        max-height: 260px;
+    }
+    .centro {
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+    }
+    .centro__oculto{
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        background: #ffff;
+        max-width: 30%;
+    }
+    
+    .nosotros{
+        padding: 3.75rem 3.75rem 7rem !important;
+        max-width: 60%;
+    }
+    .img__style{
+        background: #CCC;
+        overflow: hidden;
+        max-height: 260px;
+      
+    }
+    .img__style img{
+        width: 100%;
+        height: auto;
+        transition: opacity 500ms ease 0s;       
+    }
+    @supports(object-fit: cover){
+        .img__style img{
+          height: 100%;
+          object-fit: cover;
+          object-position: center center;
+        }
+    .cards__responsive{
+        display: flex;
+        flex-direction: row;
+        gap: 5rem;
+    }
+    .sobre__mi{
+        height: 100%;
+    }
+    
+    }
+    .process .img__solution1 img {
+        display: flex;
+    }
+    .process .img__solution0 {
+        display: none;
+    }
+}
+@media screen and (min-width: 600px){
+    .process .img__solution1{
+        display: flex;
+        justify-content: center;
+    } 
+    
+    .process .img__solution0 {
+        display: none;
+    }
+    .contenedor {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }    
+}   
+@media screen and (min-width: 900px){
+    .contenedor {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }    
+}
