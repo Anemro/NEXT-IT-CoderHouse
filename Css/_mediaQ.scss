@@ -57,14 +57,14 @@
     }
 }
 @media screen and (min-width: 600px){
+    .process .img__solution0 {
+        display: none;
+    }
     .process .img__solution1{
         display: flex;
         justify-content: center;
     } 
     
-    .process .img__solution0 {
-        display: none;
-    }
     .contenedor {
         display: flex;
         flex-direction: row;
