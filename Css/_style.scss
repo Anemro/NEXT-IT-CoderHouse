@@ -50,10 +50,10 @@ $fontSize: 1.3rem;
     text-align: center;
 }
 .deseo {
-    align-items: center;
-    position: relative;
-    display: flex;
-    justify-content: space-around;
+    .vista{
+        width: 100%;
+    }
+    
     img{
         max-width: 100vw;
         max-height: 50vh;
